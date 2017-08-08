@@ -1,0 +1,8 @@
+c:\source\Module7\src\StoreOfBuild.Data\bin\Debug\netstandard1.4\StoreOfBuild.Data.deps.json
+c:\source\Module7\src\StoreOfBuild.Data\bin\Debug\netstandard1.4\StoreOfBuild.Data.dll
+c:\source\Module7\src\StoreOfBuild.Data\bin\Debug\netstandard1.4\StoreOfBuild.Data.pdb
+c:\source\Module7\src\StoreOfBuild.Data\bin\Debug\netstandard1.4\StoreOfBuild.Domain.dll
+c:\source\Module7\src\StoreOfBuild.Data\bin\Debug\netstandard1.4\StoreOfBuild.Domain.pdb
+c:\source\Module7\src\StoreOfBuild.Data\obj\Debug\netstandard1.4\StoreOfBuild.Data.AssemblyInfo.cs
+c:\source\Module7\src\StoreOfBuild.Data\obj\Debug\netstandard1.4\StoreOfBuild.Data.dll
+c:\source\Module7\src\StoreOfBuild.Data\obj\Debug\netstandard1.4\StoreOfBuild.Data.pdb

@@ -1,0 +1,59 @@
+﻿@model StoreOfBuild.Web.ViewsModels.SaleViewModel
+@using StoreOfBuild.Web.ViewsModels
+@{
+    ViewData["Title"] = "Sale";
+}
+
+<div class="row header">
+    <div class="col-md-12">
+        <h3>Sales</h3>
+        <a href="/Sale/Create" class="btn btn-primary">New</a>
+    </div>
+</div>
+<div class="row form-wrapper">
+    <div class="col-md-12">
+        <form id="form" class="form-horizontal" asp-action="Create" asp-controller="Sale" 
+            data-ajax="true" data-ajax-method="POST" data-ajax-failure="formOnFail" data-ajax-success="window.location = '/Sale/Create'"
+            asp-anti-forgery>
+            <div class="form-group">
+                <label class="col-md-2 control-label">Client Name</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" asp-for="ClientName" >    
+                    <span asp-validation-for="ClientName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label">Product</label>
+                <div class="col-md-2">
+                    <select id="product" class="form-control" asp-for="ProductId" asp-items="@(new SelectList(@Model.Products,"Id","Name"))">
+                        <option value="NoValue"></option>
+                    </select>
+                    <span class="text-danger" asp-validation-for="ProductId"></span>    
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label">Quantity</label>
+                <div class="col-md-8">
+                    <input id="quantity" type="text" class="form-control" asp-for="Quantity" >
+                    <span class="text-danger" asp-validation-for="Quantity"></span>    
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-8">
+                    <button class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/jquery.validate.unobtrusive.js"></script>
+    <script src="/js/jquery.unobtrusive-ajax.min.js"></script>
+}
+
+
+
+
+

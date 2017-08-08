@@ -1,0 +1,20 @@
+{
+  "name": "StoreOfBuild.Web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "autonumeric": "^4.0.0-beta.20",
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-uncss": "^1.0.6",
+    "jquery": "^3.2.1",
+    "jquery-ajax-unobtrusive": "^3.2.4",
+    "jquery-validation": "^1.16.0",
+    "jquery-validation-unobtrusive": "^3.2.6",
+    "toastr": "^2.1.2"
+  }
+}

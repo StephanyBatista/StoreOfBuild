@@ -1,0 +1,12 @@
+{
+  "name": "Module7",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "dotnet run -p .\\src\\StoreOfBuild.Web\\StoreOfBuild.Web.csproj",
+    "migration": "cd .\\src\\storeofbuild.data\\ && dotnet ef --startup-project ..\\storeofbuild.web\\storeofbuild.web.csproj migrations add",
+    "remove-migration": "cd .\\src\\storeofbuild.data\\ && dotnet ef --startup-project ..\\storeofbuild.web\\storeofbuild.web.csproj migrations remove",
+    "database-update": "cd .\\src\\storeofbuild.data\\ && dotnet ef --startup-project ..\\storeofbuild.web\\storeofbuild.web.csproj database update"
+  }
+}

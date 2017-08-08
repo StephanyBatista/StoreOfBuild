@@ -1,0 +1,61 @@
+@model StoreOfBuild.Web.ViewsModels.UserViewModel
+@{
+    ViewData["Title"] = "User";
+}
+
+<div class="row header">
+    <div class="col-md-12">
+        <h3>User</h3>
+        <a href="/User" class="btn btn-primary">Back</a>
+    </div>
+</div>
+<div class="row form-wrapper">
+    <div class="col-md-12">
+        <form id="form" class="form-horizontal" asp-action="Create" asp-controller="User"
+            data-ajax="true" data-ajax-method="POST" data-ajax-failure="formOnFail" data-ajax-success="window.location = '/User'"
+            asp-anti-forgery>
+            <input type="hidden" class="form-control" asp-for="Id" >
+            <div class="form-group">
+                <label class="col-md-2 control-label">Email</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" asp-for="Email">    
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label">Password</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" asp-for="Password">    
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label">Role</label>
+                <div class="col-md-2">
+                    <select class="form-control" asp-for="Role">
+                        <option></option>
+                        <option value="Manager">Manager</option>
+                        <option value="Operation">Operation</option>
+                    </select>
+                    
+                    <span asp-validation-for="Role" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-8">
+                    <button class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/jquery.validate.unobtrusive.js"></script>
+    <script src="/js/jquery.unobtrusive-ajax.min.js"></script>
+}
+
+
+
+

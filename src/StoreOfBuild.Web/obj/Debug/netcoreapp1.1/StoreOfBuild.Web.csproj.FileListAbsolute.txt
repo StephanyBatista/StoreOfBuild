@@ -1,0 +1,14 @@
+C:\source\Module7\src\StoreOfBuild.Web\bin\Debug\netcoreapp1.1\StoreOfBuild.Web.deps.json
+C:\source\Module7\src\StoreOfBuild.Web\bin\Debug\netcoreapp1.1\StoreOfBuild.Web.runtimeconfig.json
+C:\source\Module7\src\StoreOfBuild.Web\bin\Debug\netcoreapp1.1\StoreOfBuild.Web.runtimeconfig.dev.json
+C:\source\Module7\src\StoreOfBuild.Web\obj\Debug\netcoreapp1.1\StoreOfBuild.Web.AssemblyInfo.cs
+C:\source\Module7\src\StoreOfBuild.Web\bin\Debug\netcoreapp1.1\StoreOfBuild.Web.dll
+C:\source\Module7\src\StoreOfBuild.Web\bin\Debug\netcoreapp1.1\StoreOfBuild.Web.pdb
+C:\source\Module7\src\StoreOfBuild.Web\obj\Debug\netcoreapp1.1\StoreOfBuild.Web.dll
+C:\source\Module7\src\StoreOfBuild.Web\obj\Debug\netcoreapp1.1\StoreOfBuild.Web.pdb
+C:\source\Module7\src\StoreOfBuild.Web\bin\Debug\netcoreapp1.1\StoreOfBuild.DI.dll
+C:\source\Module7\src\StoreOfBuild.Web\bin\Debug\netcoreapp1.1\StoreOfBuild.Data.dll
+C:\source\Module7\src\StoreOfBuild.Web\bin\Debug\netcoreapp1.1\StoreOfBuild.Domain.dll
+C:\source\Module7\src\StoreOfBuild.Web\bin\Debug\netcoreapp1.1\StoreOfBuild.DI.pdb
+C:\source\Module7\src\StoreOfBuild.Web\bin\Debug\netcoreapp1.1\StoreOfBuild.Data.pdb
+C:\source\Module7\src\StoreOfBuild.Web\bin\Debug\netcoreapp1.1\StoreOfBuild.Domain.pdb
