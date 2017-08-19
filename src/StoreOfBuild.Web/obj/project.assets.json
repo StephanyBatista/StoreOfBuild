@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "Libuv/1.9.1": {
@@ -3935,10 +3935,10 @@
           "StoreOfBuild.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/netstandard1.4/StoreOfBuild.Data.dll": {}
+          "bin/placeholder/StoreOfBuild.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/netstandard1.4/StoreOfBuild.Data.dll": {}
+          "bin/placeholder/StoreOfBuild.Data.dll": {}
         }
       },
       "StoreOfBuild.DI/1.0.0": {
@@ -3956,10 +3956,10 @@
           "StoreOfBuild.Data": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/netstandard1.4/StoreOfBuild.DI.dll": {}
+          "bin/placeholder/StoreOfBuild.DI.dll": {}
         },
         "runtime": {
-          "bin/placeholder/netstandard1.4/StoreOfBuild.DI.dll": {}
+          "bin/placeholder/StoreOfBuild.DI.dll": {}
         }
       },
       "StoreOfBuild.Domain/1.0.0": {
@@ -3969,10 +3969,10 @@
           "NETStandard.Library": "1.6.1"
         },
         "compile": {
-          "bin/placeholder/netstandard1.4/StoreOfBuild.Domain.dll": {}
+          "bin/placeholder/StoreOfBuild.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/netstandard1.4/StoreOfBuild.Domain.dll": {}
+          "bin/placeholder/StoreOfBuild.Domain.dll": {}
         }
       }
     }
@@ -10409,28 +10409,41 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\source\\Module7\\src\\StoreOfBuild.Web\\StoreOfBuild.Web.csproj",
-      "projectName": "StoreOfBuild.Web",
-      "projectPath": "C:\\source\\Module7\\src\\StoreOfBuild.Web\\StoreOfBuild.Web.csproj",
-      "outputPath": "C:\\source\\Module7\\src\\StoreOfBuild.Web\\obj\\",
+      "projectUniqueName": "C:\\source\\StoreOfBuild - Module 7\\src\\storeofbuild.web\\storeofbuild.web.csproj",
+      "projectName": "storeofbuild.web",
+      "projectPath": "C:\\source\\StoreOfBuild - Module 7\\src\\storeofbuild.web\\storeofbuild.web.csproj",
+      "packagesPath": "C:\\Users\\steph\\.nuget\\packages\\",
+      "outputPath": "C:\\source\\StoreOfBuild - Module 7\\src\\storeofbuild.web\\obj\\",
       "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\steph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
-      "files": {
-        "lib/netcoreapp1.1/StoreOfBuild.Web.dll": "C:\\source\\Module7\\src\\StoreOfBuild.Web\\bin\\placeholder\\netcoreapp1.1\\StoreOfBuild.Web.dll"
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {},
+        "C:\\Users\\steph\\.dotnet\\NuGetFallbackFolder": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\source\\Module7\\src\\StoreOfBuild.DI\\StoreOfBuild.DI.csproj": {
-              "projectPath": "C:\\source\\Module7\\src\\StoreOfBuild.DI\\StoreOfBuild.DI.csproj"
+            "C:\\source\\StoreOfBuild - Module 7\\src\\StoreOfBuild.DI\\StoreOfBuild.DI.csproj": {
+              "projectPath": "C:\\source\\StoreOfBuild - Module 7\\src\\StoreOfBuild.DI\\StoreOfBuild.DI.csproj"
             },
-            "C:\\source\\Module7\\src\\StoreOfBuild.Domain\\StoreOfBuild.Domain.csproj": {
-              "projectPath": "C:\\source\\Module7\\src\\StoreOfBuild.Domain\\StoreOfBuild.Domain.csproj"
+            "C:\\source\\StoreOfBuild - Module 7\\src\\StoreOfBuild.Domain\\StoreOfBuild.Domain.csproj": {
+              "projectPath": "C:\\source\\StoreOfBuild - Module 7\\src\\StoreOfBuild.Domain\\StoreOfBuild.Domain.csproj"
             }
           }
         }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {
@@ -10438,7 +10451,8 @@
         "dependencies": {
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "1.1.2"
+            "version": "1.1.2",
+            "autoReferenced": true
           },
           "Microsoft.AspNetCore": {
             "target": "Package",

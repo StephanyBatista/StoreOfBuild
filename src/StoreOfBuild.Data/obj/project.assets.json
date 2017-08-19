@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "targets": {
     ".NETStandard,Version=v1.4": {
       "Microsoft.AspNetCore.Authentication/1.1.2": {
@@ -2121,10 +2121,10 @@
           "NETStandard.Library": "1.6.1"
         },
         "compile": {
-          "bin/placeholder/netstandard1.4/StoreOfBuild.Domain.dll": {}
+          "bin/placeholder/StoreOfBuild.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/netstandard1.4/StoreOfBuild.Domain.dll": {}
+          "bin/placeholder/StoreOfBuild.Domain.dll": {}
         }
       }
     }
@@ -6714,30 +6714,46 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\steph\\.nuget\\packages\\": {}
+    "C:\\Users\\steph\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\source\\Module7\\src\\StoreOfBuild.Data\\StoreOfBuild.Data.csproj",
+      "projectUniqueName": "C:\\source\\StoreOfBuild - Module 7\\src\\StoreOfBuild.Data\\StoreOfBuild.Data.csproj",
       "projectName": "StoreOfBuild.Data",
-      "projectPath": "C:\\source\\Module7\\src\\StoreOfBuild.Data\\StoreOfBuild.Data.csproj",
-      "outputPath": "C:\\source\\Module7\\src\\StoreOfBuild.Data\\obj\\",
+      "projectPath": "C:\\source\\StoreOfBuild - Module 7\\src\\StoreOfBuild.Data\\StoreOfBuild.Data.csproj",
+      "packagesPath": "C:\\Users\\steph\\.nuget\\packages\\",
+      "outputPath": "C:\\source\\StoreOfBuild - Module 7\\src\\StoreOfBuild.Data\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\steph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
       "originalTargetFrameworks": [
         "netstandard1.4"
       ],
-      "files": {
-        "lib/netstandard1.4/StoreOfBuild.Data.dll": "C:\\source\\Module7\\src\\StoreOfBuild.Data\\bin\\placeholder\\netstandard1.4\\StoreOfBuild.Data.dll"
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\steph\\.dotnet\\NuGetFallbackFolder": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard1.4": {
           "projectReferences": {
-            "C:\\source\\Module7\\src\\StoreOfBuild.Domain\\StoreOfBuild.Domain.csproj": {
-              "projectPath": "C:\\source\\Module7\\src\\StoreOfBuild.Domain\\StoreOfBuild.Domain.csproj"
+            "C:\\source\\StoreOfBuild - Module 7\\src\\StoreOfBuild.Domain\\StoreOfBuild.Domain.csproj": {
+              "projectPath": "C:\\source\\StoreOfBuild - Module 7\\src\\StoreOfBuild.Domain\\StoreOfBuild.Domain.csproj"
             }
           }
         }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {
@@ -6745,7 +6761,8 @@
         "dependencies": {
           "NETStandard.Library": {
             "target": "Package",
-            "version": "1.6.1"
+            "version": "1.6.1",
+            "autoReferenced": true
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
