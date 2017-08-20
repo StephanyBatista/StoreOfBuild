@@ -10409,11 +10409,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\source\\StoreOfBuild - Module 7\\src\\storeofbuild.web\\storeofbuild.web.csproj",
-      "projectName": "storeofbuild.web",
-      "projectPath": "C:\\source\\StoreOfBuild - Module 7\\src\\storeofbuild.web\\storeofbuild.web.csproj",
+      "projectUniqueName": "C:\\source\\StoreOfBuild - Module 7\\src\\StoreOfBuild.Web\\StoreOfBuild.Web.csproj",
+      "projectName": "StoreOfBuild.Web",
+      "projectPath": "C:\\source\\StoreOfBuild - Module 7\\src\\StoreOfBuild.Web\\StoreOfBuild.Web.csproj",
       "packagesPath": "C:\\Users\\steph\\.nuget\\packages\\",
-      "outputPath": "C:\\source\\StoreOfBuild - Module 7\\src\\storeofbuild.web\\obj\\",
+      "outputPath": "C:\\source\\StoreOfBuild - Module 7\\src\\StoreOfBuild.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\steph\\AppData\\Roaming\\NuGet\\NuGet.Config",
