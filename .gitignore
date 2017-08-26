@@ -1,0 +1,7 @@
+*appsettings.Staging.json
+*sln.DotSettings.user
+*/PublishProfiles
+*/node_modules
+*/obj
+*/bin
+*/.vs

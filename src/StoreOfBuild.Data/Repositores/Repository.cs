@@ -28,7 +28,7 @@ namespace StoreOfBuild.Data.Repositories
             var query = _context.Set<TEntity>();
 
             if(query.Any())
-                query.ToList();
+                return query.ToList();
 
             return new List<TEntity>();
         }
