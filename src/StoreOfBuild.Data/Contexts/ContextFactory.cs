@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.IO;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
@@ -13,11 +11,17 @@ namespace StoreOfBuild.Data.Contexts
         {
             return CreateDbContext(null);
         }
-
+        
         public ApplicationDbContext CreateDbContext(string[] args)
         {
+            var builderConfiguration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.Development.json");
+            var configuration = builderConfiguration.Build();
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+
             var builder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            builder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=StoreOfBuildDb;Trusted_Connection=True;MultipleActiveResultSets=true");
+            builder.UseSqlServer(connectionString);
 
             return new ApplicationDbContext(builder.Options);
         }
