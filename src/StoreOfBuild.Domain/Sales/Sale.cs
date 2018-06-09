@@ -11,6 +11,8 @@ namespace StoreOfBuild.Domain.Sales
         public decimal Total { get; private set; }
         public SaleItem Item { get; private set; }
 
+        private Sale() { }
+
         public Sale(string clientname, Product product, int quantity)
         {
             DomainException.When(string.IsNullOrEmpty(clientname), "Client name is required");

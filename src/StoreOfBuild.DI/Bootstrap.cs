@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using StoreOfBuild.Data;
@@ -8,7 +8,6 @@ using StoreOfBuild.Data.Contexts;
 using StoreOfBuild.Data.Repositories;
 using StoreOfBuild.Domain.Sales;
 using StoreOfBuild.Data.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using StoreOfBuild.Domain.Account;
 
 namespace StoreOfBuild.DI
@@ -26,10 +25,13 @@ namespace StoreOfBuild.DI
                     config.Password.RequireLowercase = false;
                     config.Password.RequireNonAlphanumeric = false;
                     config.Password.RequireUppercase = false;
-                    config.Cookies.ApplicationCookie.LoginPath = "/Account/Login";
+                    //Não existe mais essa opção no Core 2.1
+                    //config.Cookies.ApplicationCookie.LoginPath = "/Account/Login";
                 })
                 .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();   
+                .AddDefaultTokenProviders();
+
+            services.ConfigureApplicationCookie(options => options.AccessDeniedPath = "/Account/Login");
 
             services.AddSingleton(typeof(IRepository<Product>), typeof(ProductRepository));
             services.AddSingleton(typeof(IRepository<>), typeof(Repository<>));            

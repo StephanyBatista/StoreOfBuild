@@ -9,6 +9,8 @@ namespace StoreOfBuild.Domain.Sales
         public int Quantity { get; set; }
         public decimal Total { get; set; }
 
+        private SaleItem() { }
+
         public SaleItem(Product product, int quantity)
         {
             DomainException.When(product == null, "Product is required");

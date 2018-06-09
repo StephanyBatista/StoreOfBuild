@@ -41,10 +41,10 @@ namespace StoreOfBuild.Web.Controllers
         {
             var viewModel = new ProductViewModel();
             var categories = _categoryRepository.All();
-            if(categories.Any())
-                viewModel.Categories = categories.Select(c => new CategoryViewModel{ Id = c.Id, Name = c.Name });
-            
-            if(id > 0)
+            viewModel.Categories = categories.Any()
+                ? categories.Select(c => new CategoryViewModel {Id = c.Id, Name = c.Name})
+                : new List<CategoryViewModel>();
+            if (id > 0)
             {
                 var product = _productRepository.GetById(id);
                 viewModel.Id = product.Id;
